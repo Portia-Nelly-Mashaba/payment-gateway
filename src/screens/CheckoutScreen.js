@@ -24,7 +24,10 @@ const CheckoutScreen = ({ navigation, route }) => {
           </View>
         </View>
         <View style={style.buttonContainer}>
-          <TouchableOpacity style={style.checkoutBtn}>
+          <TouchableOpacity
+            style={style.checkoutBtn}
+            onPress={() => navigation.navigate("Payment", { product })}
+          >
             <Text style={style.checkoutBtnText}>Checkout Now</Text>
           </TouchableOpacity>
         </View>
