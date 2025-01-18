@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const stripe = require('stripe')('STRIPE_SECRET_KEY');
+const stripe = require('stripe')('STRIPE_SECRET_KEY_');
 const app = express();
 
 app.use(cors());
